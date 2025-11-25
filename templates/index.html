@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Python JARVIS - Ironman UI</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+
+    <!-- REGISTER (visible by default) -->
+    <div id="register-box" class="box">
+      <h2>Register</h2>
+      <input id="reg-name" placeholder="Username" class="input"><br>
+      <input id="reg-email" placeholder="Email" class="input"><br>
+      <input id="reg-pass" type="password" placeholder="Password" class="input"><br>
+      <button class="btn" onclick="registerUser()">Create Account</button>
+      <p class="small">Already have an account? <a href="#" onclick="showLogin(event)">Login</a></p>
+    </div>
+
+    <!-- LOGIN (hidden initially) -->
+    <div id="login-box" class="box hidden">
+      <h2>Login</h2>
+      <input id="login-email" placeholder="Email" class="input"><br>
+      <input id="login-pass" type="password" placeholder="Password" class="input"><br>
+      <button class="btn" onclick="loginUser()">Login</button>
+      <p class="small">Don't have an account? <a href="#" onclick="showRegister(event)">Register</a></p>
+    </div>
+
+    <!-- ASSISTANT (hidden initially) -->
+    <div id="assistant" class="box hidden">
+      <h2>Welcome <span id="username"></span></h2>
+      <p class="content">Say something...</p>
+      <button class="mic-btn talk">🎤</button>
+    </div>
+
+  </div>
+</body>
+</html>

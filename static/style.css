@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg,#020312,#02111e 60%);
+  color: #00eaff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container { width: 380px; }
+.box {
+  background: rgba(0,15,20,0.6);
+  border: 1px solid rgba(0,234,255,0.2);
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.6);
+  text-align: center;
+  margin-bottom: 12px;
+}
+.hidden { display: none; }
+.input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  background: rgba(0,5,10,0.4);
+  border: 1px solid rgba(0,234,255,0.1);
+  color: #cfffff;
+  border-radius: 6px;
+}
+.btn {
+  background: #00eaff;
+  color: #002;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 92%;
+}
+.small { color: #9fe8f0; font-size: 14px; margin-top: 10px; }
+.mic-btn {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: url("/static/jarvis.gif");
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #00eaff;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 234, 255, 0.4);
+    transition: 0.3s;
+}
+
+.mic-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 234, 255, 0.7);
+}
+
+.content { margin: 10px 0 20px 0; color: #bff; font-size: 16px; }
