@@ -56,5 +56,4 @@ Supports smart voice commands such as:
 
 ---
 
-## 📁 Project Structure
 
